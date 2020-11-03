@@ -1,0 +1,356 @@
+@import fonts
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+    transition-duration: 1s
+
+a
+    text-decoration: none
+
+.red
+    color: rgb(239, 49, 49)
+
+ul
+    list-style: none
+
+.fa-bars
+    display: none !important 
+
+.container__header
+    width: 1580px/1740px*100%
+    margin: 0 auto
+    padding: 0 10px 0 10px
+    height: 100%
+
+.container__content
+    width: 1160px/1740px*100%
+    margin: 0 auto
+    padding: 0 10px 0 10px
+    height: 100%
+
+.container__content
+    width: 1160px/1740px*100%
+    margin: 0 auto
+    padding: 0 10px 0 10px
+    height: 100%
+
+.container__content__second
+    width: 90%
+    margin: 0 auto
+    position: relative
+    padding: 0 10px 0 10px
+    height: 100%
+
+
+body
+    position: relative
+    +poppins
+    height: 100vh
+    overflow: hidden
+    background-image: linear-gradient(90deg, #111319 0%, rgba(17, 19, 25, 0.4) 100%), url('../../media/images/main__bg.jpeg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+    .header
+        position: absolute
+        top: 0
+        width: 100%
+        height: 180px/1024px*100%
+
+        .header__content 
+            display: grid
+            grid-template-columns: 20% 60% 20%
+            height: 100%
+            align-items: center
+            
+            img
+                max-width: 100%
+
+            nav
+                ul
+                    display: flex
+                    align-self: start
+
+                    li
+                        +mulish
+                        +regular
+                        font-size: 18px/16px*1em
+                        margin-left: 60px
+
+                        a
+                            color: #ffffff
+                        
+                        a:hover,a:active,a:focus
+                            padding-bottom: 10px
+                            +exbold
+                            border-bottom: 3px solid rgb(239, 49, 49)
+
+
+                    li:first-child
+                        margin-left: 0
+
+            .header__phone
+                text-align: right
+                +bold
+                color: rgb(239, 49, 49)
+                font-size: 20px/16px*1em
+                line-height: 150%
+    
+    main
+        height: 100%
+        color: #ffffff
+        display: flex
+
+
+        .fullwidth-bg 
+            background: #000000
+            position: absolute
+            height: 100%
+            width: 100%
+            overflow: hidden
+            z-index: -100
+
+    
+            .fullwidth-bg__video 
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+            
+            
+            .video-layer
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                z-index: 5
+            
+            
+                .video-layer h1 
+                    text-align:center
+                    color: #fff
+                    font-size: 70px
+                    margin-top: 17%
+
+        .container__content__second
+            display: flex
+            justify-content: center
+            align-self: center
+            height: auto !important
+
+            .second__absolute
+                position: absolute
+                left: 71%
+                bottom: 0
+                text-align: left
+                padding-bottom: 2%
+                font-size: 1.3em
+                max-width: 30%
+
+            .main__content
+                height: auto !important
+
+            #second
+                display: flex
+                flex-direction: column
+                grid-row-gap: 0
+                text-align: left
+
+                .title__first
+                    font-weight: 300
+                    font-size: 145px/16px*1em
+                    color: #ffffff
+                    line-height: 100%
+
+                .title__second
+                    +bold
+                    font-size: 87px/16px*1em
+                    line-height: 100%
+
+
+
+                .title__three
+                    font-weight: 300
+                    font-size: 108px/16px*1em
+                    color: #ffffff
+                    line-height: 100%
+                    letter-spacing: 0.25em
+
+
+
+                .title__four
+                    +bold
+                    font-size: 96px/16px*1em
+                    line-height: 100%
+
+                .title__six
+                    +bold
+                    font-size: 96px/16px*1em
+                    line-height: 100%
+                    margin-left: 3%
+
+                    
+
+
+                .together
+                    position: relative
+                    display: flex
+
+
+        .main__content
+            height: 100%
+            display: flex
+            justify-content: center
+            align-content: center
+            flex-direction: column
+            gap: 50px/1024px*100%
+
+            .title__main
+                +bold
+                font-size: 120px/16px*1em
+                line-height: 100%
+
+            .subtitle__main__second
+                +semib
+                text-align: center
+                line-height: 100%
+                font-size: 75px/16px*1em
+
+            .title__main__second
+                font-size: 250px/16px*1em
+                line-height: 100%
+                +bold
+                text-align: center
+
+                
+
+                .write
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                    p
+                        color: #fff
+                        overflow: hidden
+                        white-space: nowrap
+                        margin: 0 auto
+                        letter-spacing: .15em
+                        animation: write 3.5s steps(30, end)
+
+            .about
+                +light
+                font-size: 22px/16px*1em
+                line-height: 150%
+                color: #A9AFC3
+
+            .about__second
+                +light
+                font-size: 22px/16px*1em
+                line-height: 150%
+                color: #A9AFC3
+                text-align: center
+
+
+            .button
+                max-width: 270px
+                width: 100%
+                border: 2px solid rgb(239, 49, 49)
+                height: 70px
+                border-radius: 50px
+                display: grid
+                align-items: center
+                text-align: center
+                +mulish
+                +bold
+                font-size: 20px/16px*1em
+                text-transform: uppercase
+                color: #ffffff
+
+            .button:hover
+                cursor: pointer
+                border-color: rgb(228, 29, 29)
+
+            .button__second
+                max-width: 447px
+                width: 100%
+                background: rgb(239, 49, 49)
+                border: 2px solid rgb(239, 49, 49)
+                height: 60px
+                border-radius: 50px
+                display: grid
+                align-items: center
+                text-align: center
+                align-self: center
+                +mulish
+                +bold
+                font-size: 20px/16px*1em
+                text-transform: uppercase
+                color: #ffffff
+
+            .button:hover
+                cursor: pointer
+                border-color: rgb(228, 29, 29)
+                background: rgb(228, 29, 29)
+
+            .footer__second
+                text-align: center
+                +mulish
+                font-size: 20px/16px*1em
+                line-height: 150%
+footer
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 180px/1024px*100%
+
+    .footer__content
+        position: relative
+        display: grid
+        height: 100%
+        align-items: center
+        text-align: right
+
+        .button__second
+            max-width: 447px
+            width: 100%
+            background: rgb(239, 49, 49)
+            border: 2px solid rgb(239, 49, 49)
+            height: 60px
+            border-radius: 50px
+            display: grid
+            align-items: center
+            text-align: center
+            align-self: center
+            justify-self: center
+            +mulish
+            +bold
+            font-size: 20px/16px*1em
+            text-transform: uppercase
+            color: #ffffff
+
+        .button:hover
+            cursor: pointer
+            border-color: rgb(228, 29, 29)
+            background: rgb(228, 29, 29)
+        
+        p
+            +mulish
+            +bold
+            font-size: 20px/16px*1em
+            color: #ffffff
+            line-height: 150%
+            text-align: left
+            position: absolute
+            left: 71%
+            align-self: center
+
+
+                
+
